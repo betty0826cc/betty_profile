@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1024px) {
+  /* Styles */
+  .main {
+    flex-direction: column-reverse;
+  }
+  .leftSidebar {
+    width: 100%;
+  }
+  .rightSidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+
+  .portrait {
+    margin-top: 0;
+    --padding: 40px;
+  }
+  .portrait__head {
+    display: auto;
+  }
+
+  .sticker,
+  .rightSidebar__foot,
+  .portrait__tabs {
+    display: none;
+  }
+  .portrait__bio {
+    --width: 120px;
+  }
+
+  .personality {
+    font-size: 1.5rem;
+    top: 80px;
+    left: 60px;
+  }
+}
