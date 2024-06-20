@@ -25,7 +25,7 @@ export const leftSidebar = {
         {
           prefix: '(EXHIBITION)',
           main: '失敗者的飛翔',
-          suffix: 'It,s ok to fail',
+          suffix: 'It\'s ok to fail',
           href: 'https://www.instagram.com/p/Cxr1_zASAb1/?img_index=1'
         },
         {

@@ -2,44 +2,30 @@
 @import "./reset.css";
 @import "./flex.css";
 
-@font-face {
-    font-family: 'AcuminVariableConcept';
-    src: url('../font/AcuminVariableConcept.otf');
-}
 
 @font-face {
     font-family: 'AdobeMingStd-Light';
-    src: url('../font/AdobeMingStd-Light.otf');
+    src: url('../font/AdobeMingStd-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'BpmfGenSenRounded-M';
-    src: url('../font/BpmfGenSenRounded-M.ttf');
+    src: url('../font/BpmfGenSenRounded-M.woff') format('woff');
 }
 
 @font-face {
     font-family: 'FontsFree-Net-Dream-Avenue';
-    src: url('../font/FontsFree-Net-Dream-Avenue.ttf');
-}
-
-@font-face {
-    font-family: 'GenWanMin-L';
-    src: url('../font/GenWanMin-L.ttc');
-}
-
-@font-face {
-    font-family: 'MS Gothic';
-    src: url('../font/MS\ Gothic.ttc');
+    src: url('../font/FontsFree-Net-Dream-Avenue.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Zapfino';
-    src: url('../font/Zapfino.ttf');
+    src: url('../font/Zapfino.woff') format('woff');
 }
 
 @font-face {
     font-family: 'VigranMaroll-2OzWK';
-    src: url('../font/VigranMaroll-2OzWK.otf');
+    src: url('../font/VigranMaroll-2OzWK.woff') format('woff');
 }
 
 :root {
@@ -163,7 +149,9 @@ body {
 .leftSidebar__listItem--title {
     position: relative;
     font-size: 3rem;
-    font-family: 'GenWanMin-L';
+    font-family: 'serif';
+    line-height:  .7em;
+    letter-spacing: .5px;
 
     h2 {
         align-content: center;
@@ -386,7 +374,9 @@ body {
 
 .submenu__content--suffix {
     /* 英文字體 */
+    font-family: 'Arial';
     font-size: .9rem;
+    letter-spacing: 0.5px;
 }
 
 .submenu__item {
