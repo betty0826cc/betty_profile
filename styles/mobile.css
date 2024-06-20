@@ -40,4 +40,17 @@
   .instagram {
     display: none;
   }
+
+  .submenu__content {
+    gap: 0;
+  }
+
+  .submenu__content--main {
+    display: none;
+  }
+
+  .tag-arrow {
+    margin-left: calc(-1 * var(--padding));
+  }
+
 }

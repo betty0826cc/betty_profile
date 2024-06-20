@@ -286,13 +286,13 @@ body {
 }
 
 .graph {
-    width: fit-content;
+    --width: min(40%, 242px);
     padding: 20px;
     border-left: var(--border-width) var(--border-style) var(--border-color);
 }
 
 .graph:first-of-type {
-    width: 242px;
+    width: var(--width);
     flex-shrink: 1;
     background-color: #28ffc6;
 }
@@ -300,13 +300,12 @@ body {
 .graph:last-of-type {
     display: flex;
     justify-content: center;
-    width: calc(100% - 242px);
+    width: calc(100% - var(--width));
     background-color: #e6e6e6;
 }
 
 .graph__container {
     position: relative;
-    height: 140px;
 }
 
 .graph__container--sm {
@@ -335,7 +334,7 @@ body {
     position: absolute;
     top: 0;
     border: var(--border-width) var(--border-style) var(--border-color);
-    height: 110px;
+    height: min(80%, 110px);
     width: 100%;
 }
 
@@ -389,6 +388,7 @@ body {
     content: var(--prefix);
     display: block;
     width: 120px;
+    flex-shrink: 0;
     font-family: 'Courier New';
     font-size: .75rem;
 }
@@ -403,6 +403,7 @@ body {
     box-sizing: border-box;
     transition: width 1s ease-in-out;
     background-color: #28ffc6;
+    pointer-events: none;
     z-index: 1;
 }
 
