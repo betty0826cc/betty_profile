@@ -36,4 +36,8 @@
     top: 80px;
     left: 60px;
   }
+
+  .instagram {
+    display: none;
+  }
 }
