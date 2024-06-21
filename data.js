@@ -25,7 +25,7 @@ export const leftSidebar = {
         {
           prefix: '(EXHIBITION)',
           main: '失敗者的飛翔',
-          suffix: 'It\'s ok to fail',
+          suffix: 'It,s ok to fail',
           href: 'https://www.instagram.com/p/Cxr1_zASAb1/?img_index=1'
         },
         {
@@ -50,7 +50,7 @@ export const leftSidebar = {
     },
     {
       title: 'Behance',
-      href: 'https://www.instagram.com/ntua2f/',
+      href: 'https://www.behance.net/linyisyuan7208',
       submenu: [
         {
 
@@ -59,6 +59,12 @@ export const leftSidebar = {
           suffix: 'It,s ok to fail',
           href: 'javascript:;'
         },
+      ]
+    },
+    {
+      title: 'Mail to...',
+      href: 'mailto:linyisyuan0826@gmail.com',
+      submenu: [
       ]
     },
   ],

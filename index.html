@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/mobile.css">
-    <title> Betty Lin's world</title>
-    <link rel="shortcut icon" href="./img/icon-candy.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-    <script defer type="module" src="./index.js"></script>
-    <script defer src="./canvas.js"></script>
-  </head>
 
-  <body>
-    <div class="header">
-      <div class="marquee">
-        <div class="marquee-inner">
-          <span class="marquee-body" id="MarqueeContent" style="--speed:3;"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <title> Betty Lin's world</title>
+  <link rel="shortcut icon" href="./img/icon-candy.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script defer type="module" src="./index.js"></script>
+  <script defer src="./canvas.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span class="marquee-body" id="MarqueeContent" style="--speed:3;"></span>
+      </div>
+    </div>
+  </div>
+  <main class="main flex">
+    <div class="main__left leftSidebar">
+      <!-- 左邊 -->
+      <div class="leftSidebar__head banner">
+        <canvas class="banner__main canvas circle" id="Canvas" width="400" height="250"></canvas>
+        <div class="sticker circle"></div>
+      </div>
+      <div class="leftSidebar__body">
+        <ul class="leftSidebar__list menu" id="Profile"></ul>
+      </div>
+      <div class="leftSidebar__foot">
+        <div class="graphContainer">
+          <!-- TODO: change content  -->
+          <div class="graph">
+            <div class="graph__container graph__container--sm">
+              <figure class="graph__imgWrapper">
+                <img class="graph__img" src="./img/1.png" alt="emoji">
+              </figure>
+            </div>
+          </div>
+          <div class="graph">
+            <div class="graph__container graph__container--lg">
+              <div class="graph__path circle"></div>
+              <div class="graph__path circle"></div>
+              <img class="graph__content" src="./img/emoticon-happiness.png" alt="emoji">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <main class="main flex">
-      <div class="main__left leftSidebar">
-        <!-- 左邊 -->
-        <div class="leftSidebar__head banner" id="CanvasWrapper">
-            <canvas class="banner__main canvas circle" id="Canvas" width="400" height="250"></canvas>
-            <div class="sticker circle"></div>
-        </div>
-        <div class="leftSidebar__body">
-          <ul class="leftSidebar__list menu" id="Profile"></ul>
-        </div>
-        <div class="leftSidebar__foot">
-            <div class="graphContainer">
-              <!-- TODO: change content  -->
-                <div class="graph">
-                  <div class="graph__container graph__container--sm">
-                    <figure class="graph__imgWrapper">
-                      <img class="graph__img" src="./img/1.png" alt="emoji">
-                    </figure>
-                  </div>
-                </div>
-                <div class="graph">
-                    <div class="graph__container graph__container--lg">
-                        <div class="graph__path circle"></div>
-                        <div class="graph__path circle"></div>
-                        <img class="graph__content" src="./img/emoticon-happiness.png" alt="emoji">
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="main__right rightSidebar">
-        <div class="rightSidebar__head portrait">
-          <!-- 右邊頭部 -->
-          <div class="portrait__head">
-            <ul class="portrait__tabs">
-                <a class="link" href="javascript:;"><li class="portrait__tab portrait__tab--active">ABOUT ME</li></a>
-                <a class="link" href="javascript:;"><li class="portrait__tab">IllUSTRATOR</li></a>
-                <a class="link" href="javascript:;"><li class="portrait__tab">BRAND IDENTITY</li></a>
-                <a class="link" href="javascript:;"><li class="portrait__tab">PROJECT DESIGN</li></a>
-                <a class="link" href="javascript:;"><li class="portrait__tab">未命名-5.ai*@</li></a>
-            </ul>
-            <figure class="portrait__bio">
-                <img src="./img/ID photo.png" alt="myself" class="portrait__img">
-            </figure>
-          </div>
-          <div class="portrait__foot">
-            <div class="tag-color">
-              <span>
-                #62f<span class="wide">F</span>D5
-              </span>
-            </div>
-            <div class="tag-colorName">這個顏色叫做口水綠</div>
-          </div>
-          <div class="addtional">
-            <div class="tag-arrow">&horbar;&horbar;&#8250;</div>
-            <a class="link" href="mailto:linyisyuan0826@gmail.com">
-              <div class="instagram">
-                <div class="instagram__head">
-                  instagram
-                </div>
-              </div>
+    <div class="main__right rightSidebar">
+      <div class="rightSidebar__head portrait">
+        <!-- 右邊頭部 -->
+        <div class="portrait__head">
+          <ul class="portrait__tabs">
+            <a class="link" href="">
+              <li class="portrait__tab portrait__tab--active">ABOUT ME</li>
             </a>
+            <a class="link" href="https://www.instagram.com/p/CZxsd9cPx1S/">
+              <li class="portrait__tab">IllUSTRATOR</li>
+            </a>
+            <a class="link" href="javascript:;">
+              <li class="portrait__tab">BRAND IDENTITY</li>
+            </a>
+            <a class="link" href="javascript:;">
+              <li class="portrait__tab">PROJECT DESIGN</li>
+            </a>
+            <a class="link" href="javascript:;">
+              <li class="portrait__tab">未命名-5.ai*@</li>
+            </a>
+          </ul>
+          <figure class="portrait__bio">
+            <img src="./img/ID photo.png" alt="myself" class="portrait__img">
+          </figure>
+        </div>
+        <div class="portrait__foot">
+          <div class="tag-color">
+            <span>
+              #62f<span class="wide">F</span>D5
+            </span>
           </div>
+          <div class="tag-colorName">這個顏色叫做口水綠</div>
         </div>
-        <div class="rightSidebar__foot">
-          linyisyuan0826@gmail.com
+        <div class="addtional">
+          <div class="tag-arrow">&horbar;&horbar;&#8250;</div>
+          <a class="link" href="mailto:linyisyuan0826@gmail.com">
+            <div class="instagram">
+              <div class="instagram__head">
+                instagram
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="personality circle">
-        ENFP
+      <div class="rightSidebar__foot">
+        linyisyuan0826@gmail.com
       </div>
-    </main>
-  </body>
+    </div>
+    <div class="personality circle">
+      ENFP
+    </div>
+    </m>
+</body>
+
 </html>
