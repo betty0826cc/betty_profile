@@ -20,7 +20,7 @@ export const leftSidebar = {
           prefix: '(EXHIBITION)',
           main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
-          href: 'https://www.behance.net/gallery/221315599/NTUA-SCC-113-'
+          href: ''
         },
         {
           prefix: '(EXHIBITION)',
