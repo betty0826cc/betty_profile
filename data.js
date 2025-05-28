@@ -25,8 +25,8 @@ export const leftSidebar = {
         {
           prefix: '(EXHIBITION)',
           main: '巷弄鄰里號',
-          suffix: 'It,s ok to fail',
-          href: 'https://www.instagram.com/p/Cxr1_zASAb1/?img_index=1'
+          suffix: 'Sense of the streets',
+          href: 'https://www.instagram.com/sense_of_the_streets/'
         },
         {
           prefix: '(WORK)',
